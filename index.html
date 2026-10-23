@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="خير يبقى، مساحة لنشر القرآن والأذكار والأدعية والخير.">
+  <title>خيرٌ يبقى | صدقة وأثر طيب</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background: #f8f6ef;
+      color: #294536;
+      line-height: 1.9;
+    }
+
+    header {
+      background: #244735;
+      color: #fffdf6;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header .symbol {
+      font-size: 35px;
+    }
+
+    header h1 {
+      margin: 5px 0;
+      font-size: 38px;
+    }
+
+    header p {
+      margin: 5px 0;
+      color: #e0e8dc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 15px;
+      background: #fffdf7;
+      border-bottom: 1px solid #e8e4d8;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #294536;
+      padding: 7px 13px;
+      border-radius: 20px;
+    }
+
+    nav a:hover {
+      background: #e8eee5;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 35px 20px 15px;
+    }
+
+    .intro h2 {
+      font-size: 26px;
+      margin-bottom: 5px;
+    }
+
+    .intro p {
+      color: #65766a;
+      margin-top: 5px;
+    }
+
+    main {
+      width: min(900px, 92%);
+      margin: auto;
+    }
+
+    .card {
+      background: #fffefa;
+      border: 1px solid #e9e6db;
+      border-radius: 20px;
+      padding: 25px;
+      margin: 22px 0;
+      box-shadow: 0 5px 20px #243d3009;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #315b43;
+    }
+
+    .verse {
+      font-size: 23px;
+      line-height: 2.2;
+      color: #315b43;
+    }
+
+    .note {
+      color: #758174;
+      font-size: 13px;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: 15px;
+      background: #315b43;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 11px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1e3e2d;
+    }
+
+    .secondary {
+      background: #e9eee5;
+      color: #294536;
+    }
+
+    .secondary:hover {
+      background: #dce5d8;
+    }
+
+    .dua {
+      background: #f5f4e9;
+      padding: 18px;
+      border-radius: 14px;
+      margin: 12px 0;
+    }
+
+    .count {
+      font-size: 30px;
+      color: #315b43;
+      font-weight: bold;
+    }
+
+    .share {
+      text-align: center;
+      background: #e9eee5;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 28px 15px;
+      text-align: center;
+      background: #244735;
+      color: #fffdf6;
+    }
+
+    footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 31px;
+      }
+
+      .card {
+        padding: 19px;
+      }
+
+      .verse {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="symbol">🌿</div>
+    <h1>خيرٌ يبقى</h1>
+    <p>أثر طيب، وخير نرجو به الأجر من الله</p>
+    <p>﴿وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ﴾</p>
+  </header>
+
+  <nav>
+    <a href="#quran">آية قرآنية</a>
+    <a href="#parents">الوالدان</a>
+    <a href="#dhikr">الذكر</a>
+    <a href="#dua">أدعية</a>
+    <a href="#share">انشر الخير</a>
+  </nav>
+
+  <section class="intro">
+    <h2>أهلًا بك في خيرٌ يبقى 🤍</h2>
+    <p>خذ من هذا المكان ما ينفعك، وشارك الخير مع من تحب.</p>
+  </section>
+
+  <main>
+
+    <section class="card" id="quran">
+      <h2>📖 آية من القرآن الكريم</h2>
+      <p class="verse">
+        ﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾
+      </p>
+      <p class="note">سورة الشرح، الآيتان ٥–٦</p>
+      <button onclick="copyText('فإن مع العسر يسرا، إن مع العسر يسرا')">
+        نسخ الآية
+      </button>
+    </section>
+
+    <section class="card" id="parents">
+      <h2>🤍 دعاء للوالدين</h2>
+      <p class="verse">
+        ﴿رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا﴾
+      </p>
+      <p class="note">سورة الإسراء، الآية ٢٤</p>
+      <button onclick="copyText('رب ارحمهما كما ربياني صغيرا')">
+        نسخ الدعاء
+      </button>
+    </section>
+
+    <section class="card" id="dhikr">
+      <h2>🌱 مساحة الذكر</h2>
+      <p>سبحان الله وبحمده</p>
+      <div class="count" id="counter">0</div>
+      <button onclick="increment()">سبّح</button>
+      <button class="secondary" onclick="resetCounter()">إعادة العداد</button>
+      <p class="note">عداد بسيط لمساعدتك على متابعة ذكرك.</p>
+    </section>
+
+    <section class="card" id="dua">
+      <h2>🕊️ أدعية من القلب</h2>
+
+      <div class="dua">
+        <p>اللهم اغفر لنا وارحمنا واهدنا وعافنا وارزقنا.</p>
+        <button class="secondary"
+          onclick="copyText('اللهم اغفر لنا وارحمنا واهدنا وعافنا وارزقنا')">
+          نسخ الدعاء
+        </button>
+      </div>
+
+      <div class="dua">
+        <p>اللهم ارزقنا راحة القلب وطمأنينة النفس وحسن التوكل عليك.</p>
+        <button class="secondary"
+          onclick="copyText('اللهم ارزقنا راحة القلب وطمأنينة النفس وحسن التوكل عليك')">
+          نسخ الدعاء
+        </button>
+      </div>
+
+      <div class="dua">
+        <p>اللهم اشفِ مرضانا ومرضى المسلمين، وارحم موتانا وموتى المسلمين.</p>
+        <button class="secondary"
+          onclick="copyText('اللهم اشف مرضانا ومرضى المسلمين وارحم موتانا وموتى المسلمين')">
+          نسخ الدعاء
+        </button>
+      </div>
+    </section>
+
+    <section class="card share" id="share">
+      <h2>💚 كن سببًا في نشر الخير</h2>
+      <p>
+        شارك الموقع مع أهلك وأصدقائك، لعل أحدهم ينتفع بما فيه.
+      </p>
+      <button onclick="shareSite()">مشاركة الموقع</button>
+      <button class="secondary" onclick="copyLink()">نسخ رابط الموقع</button>
+      <p class="note" id="shareMessage"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>خيرٌ يبقى 🌿</p>
+    <p>اللهم تقبّل هذا العمل، وانفع به، واجعله خالصًا لوجهك الكريم.</p>
+    <p class="note">نسأل الله القبول والنفع والأجر.</p>
+  </footer>
+
+  <script>
+    let count = 0;
+
+    function increment() {
+      count++;
+      document.getElementById("counter").textContent = count;
+    }
+
+    function resetCounter() {
+      count = 0;
+      document.getElementById("counter").textContent = count;
+    }
+
+    async function copyText(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+        alert("تم نسخ النص 🤍");
+      } catch (error) {
+        window.prompt("انسخي النص من هنا:", text);
+      }
+    }
+
+    async function copyLink() {
+      await copyText(window.location.href);
+    }
+
+    async function shareSite() {
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: "خيرٌ يبقى",
+            text: "مساحة لنشر الخير والذكر والأدعية.",
+            url: window.location.href
+          });
+        } catch (error) {
+          // ألغى المستخدم المشاركة أو تعذرت.
+        }
+      } else {
+        await copyLink();
+      }
+    }
+  </script>
+
+</body>
+</html>
